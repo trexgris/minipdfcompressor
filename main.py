@@ -26,8 +26,9 @@ class Application(Tk):
         if file != None:
             self.__pdf_name.set(os.path.basename(file.name))
             file.close()
-            self.update_idletasks
-
+            self.
+            
+    # https://github.com/theeko74/pdfc/blob/master/pdf_compressor.py
 
 
     def __create_widgets(self):
@@ -41,9 +42,18 @@ class Application(Tk):
 
     #playlist link
        self.__pdf_name_label = Label(master=self, textvariable = self.__pdf_name)
+     
        self.__pdf_name_label.pack(side="top")
-     #  self.__pdf_name_label.pack(side="top")
-       self.update()    
+       self.__pdf_name_label.pack(side="top")
+      
+       self.update()   
+
+    #dropdown 
+     #  variable = StringVar()
+     #  variable.set("one") # default value
+
+       self.__dropdown_percentage = OptionMenu(self, "10%", "20%", "50%")
+       self.__dropdown_percentage.pack(side="left") 
 
 
 
